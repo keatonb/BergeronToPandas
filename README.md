@@ -9,8 +9,8 @@ Use as:
 ```
 from BergeronToPandas import BergeronToPandas
 tables = BergeronToPandas('Table_Mass_0.6') #OrderedDict of Pandas DataFrames
-print(tables.keys()) #['0.6 Mo Pure hydrogen grid; thick H models', '0.6 Mo Pure helium grid']
+print(tables.keys()) #"['0.6 Mo Pure hydrogen grid; thick H models', '0.6 Mo Pure helium grid']"
 print(tables.values()[0]) #Pandas DataFrame of synthetic colors for the hydrogen models
 ```
 
-If you use those models in your work, please acknowledge them as described on [their website](http://www.astro.umontreal.ca/~bergeron/CoolingModels/). Shoutouts to this script are appreciated but not required. 
+If you use those models in your work, please acknowledge them as described on [their website](http://www.astro.umontreal.ca/~bergeron/CoolingModels/). Shoutouts to this script are appreciated but optional.
