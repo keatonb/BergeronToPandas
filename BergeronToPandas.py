@@ -11,7 +11,7 @@ http://www.astro.umontreal.ca/~bergeron/CoolingModels/
 @author: keatonb
 """
 
-from __future__ import print_function
+#from __future__ import print_function
 import collections
 import pandas as pd
 import numpy as np
@@ -48,7 +48,6 @@ def BergeronToPandas(filename):
                     nrowsstr = line.split()[1]
                     nrowsint = int(nrowsstr)*int(line.split()[0])
                     
-                print(nrowsint)
                 #Followed by table description that we use as dict key
                 tablename = line.split(nrowsstr)[1].split('          ')[0].strip()
                 #Then names of output columns
