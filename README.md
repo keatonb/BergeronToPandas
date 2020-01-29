@@ -10,7 +10,7 @@ Use as:
 from BergeronToPandas import BergeronToPandas
 tables = BergeronToPandas('Table_Mass_0.6') #OrderedDict of Pandas DataFrames
 print(tables.keys()) #"['0.6 Mo Pure hydrogen grid; thick H models', '0.6 Mo Pure helium grid']"
-print(tables.values()[0]) #Pandas DataFrame of synthetic colors for the hydrogen models
+print(list(tables.values())[0]) #Pandas DataFrame of synthetic colors for the hydrogen models
 ```
 Note: some columns will have the same names (e.g., "g","r","i") because that's how they are in the original files.
 
